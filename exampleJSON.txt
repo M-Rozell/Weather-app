@@ -1,0 +1,47 @@
+Birmingham, Al
+
+{
+"coord": {
+"lon": -86.8025,
+"lat": 33.5207
+},
+"weather": [
+{
+"id": 803,
+"main": "Clouds",
+"description": "broken clouds",
+"icon": "04d"
+}
+],
+"base": "stations",
+"main": {
+"temp": 308.5,
+"feels_like": 315.5,
+"temp_min": 306.88,
+"temp_max": 309.12,
+"pressure": 1017,
+"humidity": 55
+},
+"visibility": 10000,
+"wind": {
+"speed": 0.45,
+"deg": 164,
+
+"gust": 1.34
+},
+"clouds": {
+"all": 66
+},
+"dt": 1655499411,
+"sys": {
+"type": 2,
+"id": 2046509,
+"country": "US",
+"sunrise": 1655462222,
+"sunset": 1655513958
+},
+"timezone": -18000,
+"id": 4049979,
+"name": "Birmingham",
+"cod": 200
+}
