@@ -4,16 +4,11 @@ import axios from "axios";
 import './app.css';
 import moment from "moment";
 
-
-
 function App() {
-
 
     const [data, setData] = useState({})
 
     const [location, setLocation] = useState('')
-
-
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=bdb95c6b9964e1a35c7b8cb3c7a548c7`
 
@@ -29,11 +24,12 @@ function App() {
 
     return (
         <div className="app">
-            
+
             <div className="search">
                 <input value={location} onChange={e => setLocation(e.target.value)} type='text' placeholder="Location" onKeyPress={search} />
                 <div className="day">{moment().format('MMMM Do YYYY, h:mm:ss a')}</div>
             </div>
+
             <div className="container">
 
                 <div className="top">
@@ -43,7 +39,6 @@ function App() {
                     <div className="sky">{data.weather ? <p>{data.weather[0].main}</p> : null}</div>
                 </div>
 
-
                 {data.name !== undefined &&
                     <div className="middle">
                         <div className="feelsLike">{data.main ? <p className="bold">{data.main.feels_like.toFixed()}°F</p> : null}<p>Feels Like</p></div>
@@ -51,17 +46,17 @@ function App() {
                         <div className="wind"><p className="bold">{data.wind.speed.toFixed()}mph</p><p>Wind</p></div>
                     </div>
                 }
-
-
-
-
-
             </div>
         </div>
     )
 };
 
 export default App;
+
+
+
+
+
 
 
 
